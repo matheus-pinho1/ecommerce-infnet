@@ -1,0 +1,36 @@
+.menuNav {
+  display: flex;
+  flex-direction: column;
+  background-color: #075c9c;
+  border-radius: 5px;
+}
+
+.itemNav {
+  color: #ffffff;
+  text-align: center;
+  margin: 10px;
+  order: 1;
+  
+}
+
+.itemNavHome {
+  font-weight: 800;
+}
+
+.itemNavToggle {
+  order: 0;
+}
+
+@media (min-width: 470px) {
+  .menuNav {
+    flex-direction: row;
+  cursor: pointer;
+  }
+  .itemNavHome {
+    flex-grow: 1;
+    text-align: left;
+  }
+  .itemNavToggle {
+    display: none;
+  }
+}
